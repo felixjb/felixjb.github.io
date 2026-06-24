@@ -1,0 +1,34 @@
+{
+  "name": "felixjb.github.io",
+  "description": "My personal website",
+  "version": "1.0.0",
+  "author": {
+    "name": "Felix J. Batista",
+    "email": "me@felixjb.com"
+  },
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/felixjb/felixjb.github.io#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixjb/felixjb.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/felixjb/felixjb.github.io/issues"
+  },
+  "main": "index.js",
+  "type": "module",
+  "packageManager": "npm@11.9.0",
+  "engineStrict": true,
+  "engines": {
+    "node": "24.14.0",
+    "npm": "11.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --quiet"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6"
+  }
+}
