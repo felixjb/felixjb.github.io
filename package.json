@@ -24,11 +24,23 @@
     "npm": "11.9.0"
   },
   "scripts": {
+    "format": "prettier --ignore-path .gitignore --write .",
+    "lint": "eslint . --fix && stylelint --allow-empty-input --fix '**/*.css'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve --quiet"
+    "build": "eleventy",
+    "build:check": "eleventy --dryrun",
+    "serve": "eleventy --serve --quiet"
   },
   "devDependencies": {
-    "@11ty/eleventy": "3.1.6"
+    "@11ty/eleventy": "3.1.6",
+    "@commitlint/cli": "^21.1.0",
+    "@commitlint/config-conventional": "^21.1.0",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.6.0",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.9.0",
+    "simple-git-hooks": "^2.13.1",
+    "stylelint": "^17.14.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }

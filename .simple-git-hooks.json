@@ -1,0 +1,5 @@
+{
+  "pre-commit": "npx --no -- lint-staged",
+  "commit-msg": "npx --no -- commitlint --edit $1",
+  "pre-push": "npx --no -- npm run build:check"
+}
